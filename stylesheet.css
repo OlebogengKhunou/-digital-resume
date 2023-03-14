@@ -1,0 +1,207 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0%;
+}
+
+Aside ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/*FIRST SECTION---------------------------------------------------*/
+aside {
+    text-align: center;
+    background-color: black;
+    background-size: 70px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.Menuformat {
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    right: 17px;
+}
+
+header {
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 0.1%;
+    background-image: url(https://images.unsplash.com/photo-1611307742746-43cbea512c37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+header p{
+    font-size: 60px;
+    position: relative;
+    bottom: 100px;
+}
+
+.BackgroundDimCover {
+    background-color: rgba(0, 0, 0, 50%);
+    height: 100vh;
+    color: white;
+    padding-top: 16%;
+    margin-top: -10%;
+}
+
+/*SECOND SECTION ---------------------------------------------------*/
+article {
+    padding-left: 9%;
+    padding-top: 9%;
+    padding-right: 0%;
+    background-color: green;
+    padding-bottom: 8%;
+}
+
+img {
+    border-radius: 50%;
+  /*  border-style: solid;
+    border-color: black;
+    border-width: 4px;*/
+}
+
+h1,h2,h3,p,ul {
+    margin-bottom: 20px;
+    /*Spacing between in content*/
+}
+
+.contentborder {
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    margin-right: 8%;
+}
+
+.spacefromborder {
+    padding-left: 4%;
+}
+
+#education{
+  background-color: white;
+  font-size: 40px;
+  border-start-start-radius: 50px;
+  border-end-start-radius: 50px;
+  padding-left: 3px;
+}
+
+/*THIRD SECTION ---------------------------------------------------*/
+footer {
+    font-size: 109%;
+    padding: 2%;
+    background-color: rgb(35, 42, 89);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.backtotop {
+    background-color: green;
+    border-radius: 20%;
+    width: 230px;
+}
+
+.formborder {
+    background-color: rgb(22, 24, 60);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    background-color: rgb(22, 24, 60);
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    grid-template-rows: 1fr;
+    row-gap: 6px;
+    padding: 20px;
+}
+
+.grid-item {
+    column-gap: 10px;
+}
+
+.itemA {
+    background-color: burlywood;
+    border-start-start-radius: 20px;
+    border-end-start-radius: 20px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+}
+
+.itemB,input,textarea,select {
+    width: 244px;
+    background-color: white;
+    border-end-end-radius: 20px;
+    border-start-end-radius: 20px;
+    border: none;
+}
+input{
+    height: 31.6px;
+}
+select{
+    height:34px;
+}
+button{
+    margin-top: 15px;
+    height: 30px;
+    position: relative;
+    left:120px;
+}
+
+/*DEVICE RESPONSIVENESS SECTION----------------------------------------*/
+@media only screen and (max-width: 767px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    body,input,textarea,select,option,button {
+        font-size: 11.5px;
+    }
+    .ImageCenter{
+        display:flex; 
+        justify-content:center;
+        align-items:center;
+        height:70vh;
+        }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    body,input,textarea,select,option,button {
+        font-size: 14.5px;
+    }
+    .ImageCenter{
+        display:flex; 
+        justify-content:center;
+        align-items:center;
+        height:70vh;
+        }
+}
+
+@media only screen and (min-width: 1026px) {
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    body,input,textarea,select,option {
+        font-size: 18px;
+    }
+    .ImageCenter{
+        display:flex; 
+        justify-content:center;
+        align-items:center;
+        height:70vh;
+        }
+}
