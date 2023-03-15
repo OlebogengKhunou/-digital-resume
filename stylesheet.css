@@ -41,6 +41,14 @@ header p{
     bottom: 100px;
 }
 
+header img {
+    border-radius: 50%;
+   border:4px solid black;
+}
+img{
+    border-radius: 50px;
+}
+
 .BackgroundDimCover {
     background-color: rgba(0, 0, 0, 50%);
     height: 100vh;
@@ -50,44 +58,89 @@ header p{
 }
 
 /*SECOND SECTION ---------------------------------------------------*/
-article {
-    padding-left: 9%;
-    padding-top: 9%;
-    padding-right: 0%;
-    background-color: green;
-    padding-bottom: 8%;
-}
-
-img {
-    border-radius: 50%;
-  /*  border-style: solid;
-    border-color: black;
-    border-width: 4px;*/
-}
 
 h1,h2,h3,p,ul {
     margin-bottom: 20px;
-    /*Spacing between in content*/
 }
 
-.contentborder {
-    border-style: solid;
-    border-color: black;
-    border-width: 4px;
-    margin-right: 8%;
+article {
+    background-color:green;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  
 }
-
-.spacefromborder {
-    padding-left: 4%;
+article div {
+    border: 1px solid black;
+}
+article h2,h3{
+    text-align:center;
+}
+.item2{
+    grid-row: 2/3;
+    grid-column: 2/2;
+}
+.item3{
+    grid-row: 3/3;
+    grid-column: 1/2; 
 }
 
 #education{
   background-color: white;
   font-size: 40px;
-  border-start-start-radius: 50px;
-  border-end-start-radius: 50px;
-  padding-left: 3px;
+  border-end-end-radius: 50px;
+  border-start-end-radius: 50px;
+  padding-right: 3px;
+  animation-name: sidestepname;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
 }
+@keyframes sidestepname{
+    from{ transform: translateX(-2000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+#experience{
+    background-color: white;
+    font-size: 40px;
+    border-start-start-radius: 50px;
+    border-end-start-radius: 50px;
+    padding-right: 3px;
+    animation-name: sidexperience;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+  }
+  @keyframes sidexperience{
+      from{ transform: translateX(2000px);
+      }
+      to{
+          transform: translateX(0px);
+      }
+  }
+
+  #skills{
+    background-color: white;
+    font-size: 40px;
+    border-end-end-radius: 50px;
+    border-start-end-radius: 50px;
+    padding-right: 3px;
+    animation-name: sideskills;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+  }
+  @keyframes sideskills{
+      from{ transform: translateX(-2000px);
+      }
+      to{
+          transform: translateX(0px);
+      }
+  }
 
 /*THIRD SECTION ---------------------------------------------------*/
 footer {
@@ -153,6 +206,7 @@ button{
     position: relative;
     left:120px;
 }
+
 
 /*DEVICE RESPONSIVENESS SECTION----------------------------------------*/
 @media only screen and (max-width: 767px) {
