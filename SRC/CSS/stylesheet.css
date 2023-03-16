@@ -264,6 +264,7 @@ button {
 
 /*DEVICE RESPONSIVENESS SECTION----------------------------------------*/
 @media only screen and (max-width: 767px) {
+
     footer {
         display: flex;
         flex-direction: column;
