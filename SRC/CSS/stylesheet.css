@@ -10,10 +10,7 @@ Aside ul li a {
 }
 
 /*FIRST SECTION---------------------------------------------------*/
-.limitIntro{
-    margin-left:600px;
-    margin-right:600px;
-}
+
 aside {
     background-color: black;
     background-size: 70px;
@@ -75,6 +72,7 @@ img {
     animation-name: slide1;
     animation-duration: 3s;
     animation-timing-function: ease;
+   
 }
 
 @keyframes slide1 {
@@ -83,7 +81,7 @@ img {
     }
 
     to {
-        transform: translateX(0px);
+        transform: translateX(-50px);
     }
 }
 
@@ -99,7 +97,7 @@ img {
     }
 
     to {
-        transform: translateX(0px);
+        transform: translateX(50px);
     }
 }
 
@@ -370,6 +368,11 @@ button {
     .response {
         font-size: 40px;
     }
+    .limitIntro{
+        position: relative;
+        bottom: 20px;
+        font-size: 24px;
+    }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -387,6 +390,16 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 70vh;
+        height: 50vh;
+    }
+    .animate{
+        padding-right: 50px;
+        }
+    .animate2{
+            padding-left: 50px;
+       }
+       .limitIntro{
+        position: relative;
+        bottom: 5px;
     }
 }
