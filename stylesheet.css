@@ -17,16 +17,6 @@ aside {
     padding-bottom: 1%;
 }
 
-aside li:hover {
-    background-color: green;
-    padding-left: 30px;
-    padding-right: 15px;
-    border-end-end-radius: 50px;
-    border-start-end-radius: 50px;
-    border-start-start-radius: 50px;
-    border-end-start-radius: 50px;
-}
-
 .Menuformat {
     color: white;
     list-style: none;
@@ -113,32 +103,40 @@ article {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-
 }
 
 article div {
     border: 1px solid black;
 }
 
-article h2,
-h3 {
+article h2,h3 {
     text-align: center;
 }
 
 .item1 {
     background-color: green;
 }
-
-.item2 {
+.item1 p{
+    padding-left: 25px;
+   }
+.item2{
+ text-align: center;
+ background-color: white;
+}
+.item4 {
     grid-row: 2/3;
     grid-column: 2/2;
     background-color: green;
 }
 
-.item3 {
+.item5 {
     grid-row: 3/3;
     grid-column: 1/2;
     background-color: green;
+}
+.item6{
+    text-align: center;
+    margin-top: 50px;
 }
 
 #education {
@@ -298,6 +296,42 @@ button {
         bottom:200px;
         right:50px;
     }
+    article h2 {
+          font-size: 20px;
+    }
+    
+ article { 
+    background-color: black;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+.item1 {
+    background-color: green;
+}
+.item2{
+    display:none;
+}
+.item4 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: green;
+}
+.item3{
+    display: none;
+}
+.item5 {
+    grid-row: 3/3;
+    grid-column: 1/1;
+    background-color: green;
+}
+.item6{
+    display: none;
+}
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
@@ -323,6 +357,17 @@ button {
 }
 
 @media only screen and (min-width: 1025px) {
+
+    aside li:hover {
+        background-color: green;
+        padding-left: 30px;
+        padding-right: 15px;
+        border-end-end-radius: 50px;
+        border-start-end-radius: 50px;
+        border-start-start-radius: 50px;
+        border-end-start-radius: 50px;
+    }
+
     footer {
         display: flex;
         justify-content: space-evenly;
